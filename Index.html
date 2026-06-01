@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Pendaftaran Secapa</title>
+    <style>
+        :root {
+            --primary-color: #1b4332; /* Hijau Angkatan */
+            --secondary-color: #40916c;
+            --accent-color: #d8f3dc;
+            --gold-color: #b79455;
+            --text-dark: #2d3748;
+            --bg-light: #f7fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(27, 67, 50, 0.9), rgba(27, 67, 50, 0.95));
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid var(--gold-color);
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0 0 0;
+            color: var(--accent-color);
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Card Section */
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+        }
+
+        /* Persyaratan List */
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Tahapan Seleksi (Timeline) */
+        .timeline {
+            list-style: none;
+            padding: 0;
+            position: relative;
+        }
+
+        .timeline li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .timeline li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--secondary-color);
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        /* Table JADWAL */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        /* Button */
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-daftar {
+            background-color: var(--gold-color);
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: background 0.3s, transform 0.2s;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .btn-daftar:hover {
+            background-color: #96743b;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a202c;
+            color: #a0aec0;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            table, thead, tbody, th, td, tr { display: block; }
+            th { position: absolute; top: -9999px; left: -9999px; }
+            tr { border: 1px solid #cbd5e0; margin-bottom: 10px; }
+            td { border: none; border-bottom: 1px solid #e2e8f0; position: relative; padding-left: 50%; }
+            td:before { position: absolute; top: 12px; left: 12px; width: 45%; padding-right: 10px; white-space: nowrap; font-weight: bold; }
+            td:nth-of-type(1):before { content: "Kegiatan"; }
+            td:nth-of-type(2):before { content: "Waktu Pelaksanaan"; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Penerimaan Calon Perwira (Secapa)</h1>
+        <p>Transformasi Bintara Menjadi Perwira yang Tangguh dan Profesional</p>
+    </div>
+
+    <div class="container">
+
+        <!-- Pengenalan -->
+        <div class="card">
+            <h2>Tentang Secapa</h2>
+            <p>Sekolah Calon Perwira merupakan lembaga pendidikan militer/kedinasan yang bertujuan untuk membentuk dan mengembangkan Bintara terpilih menjadi Perwira yang memiliki sikap, perilaku, pengetahuan, dan keterampilan sebagai pemimpin di tingkat taktis.</p>
+        </div>
+
+        <!-- Persyaratan -->
+        <div class="card">
+            <h2>Persyaratan Umum & Khusus</h2>
+            <ul>
+                <li><strong>Status:</strong> Berpangkat Bintara aktif (Serma/Sersan Mayor hingga Pelda/Pembantu Letnan Dua).</li>
+                <li><strong>Masa Dinas:</strong> Memiliki masa dinas /kepangkatan yang memenuhi kualifikasi
+                .</li>
+
+                <li><strong>Rekam Jejak:</strong> Tidak sedang dalam proses hukum atau terlibat perkara pidana/disiplin .</li>
+            </ul>
+        </div>
+
+            </ul>
+        </div>
+
+        <!-- Alur Seleksi -->
+        <div class="card">
+            <h2>Tahapan Seleksi</h2>
+            <ul class="timeline">
+                <li><strong>Tahap 1:</strong> Seleksi Administrasi kesatuan awal.</li>
+                <li><strong>Tahap 2:</strong> Tes Akademik.</li>
+                <li><strong>Tahap 3:</strong> Uji Jasmani, (Kesamaptaan).</li>
+                <li><strong>Tahap 4:</strong> Pantukhir (Panitia Penentu Terakhir).</li>
+            </ul>
+        </div>
+        
+        <!-- CTA Button -->
+        <div class="btn-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV6dSfROb00Gh3hh4uUwwgYnpfTjkwGfxe06ARHxZwBd4AVA/viewform?usp=header" class="btn-daftar">Menuju Link Formulir Pendaftaran</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Panitia Penerimaan Sekolah Calon Perwira. Seluruh proses seleksi tidak dipungut biaya (Gratis).</p>
+    </footer>
+
+</body>
+</html>
